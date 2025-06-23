@@ -11,11 +11,7 @@ pub struct Guard {
 	guard: WorkerGuard,
 }
 
-pub const LOGS_DIR: &str = if cfg!(not(debug_assertions)) {
-	"/home/ah/Desktop/logs"
-} else {
-	"/home/ah/Desktop/Risk/logs"
-};
+pub const LOGS_DIR: &str = "/Users/ah/Desktop/Risk/logs";
 pub const PREFIX: &str = "risk";
 
 pub fn install_tracing(filter: &str) -> color_eyre::Result<Guard> {
