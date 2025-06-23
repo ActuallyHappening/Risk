@@ -10,4 +10,12 @@ time = { version = "0.3.41", features = ["macros", "formatting"] }
 tracing = "0.1.41"
 tracing-appender = "0.2.3"
 tracing-error = "0.2.1"
-tracing-subscriber = { version = "0.3.19", features = ["fmt", "env-filter", "time", "json"] }
+tracing-subscriber = { version = "0.3.19", features = [
+	"fmt",
+	"env-filter",
+	"time",
+	"json",
+] }
+
+[lints.rust]
+unused_imports = "allow"
